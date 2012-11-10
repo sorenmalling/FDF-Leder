@@ -42,5 +42,5 @@ footer{top:0;left:0;right:0;height:15px;background-image:-webkit-linear-gradient
 #local-navigation-first-level ol{list-style:none;padding-left:0;font-size:1.1em;}#local-navigation-first-level ol>li{display:inline-block;border-left:2px solid #e72b31;padding:.2em .4em 0 .5em;}#local-navigation-first-level ol>li:first-child{border-left:0;padding-left:0;}
 #local-navigation-first-level a{text-transform:uppercase;text-decoration:none;}
 #news-rotator{position:relative;height:200px;}#news-rotator div{height:200px;}
-@media screen and (max-width:700px){#news-rotator .span1{position:absolute;top:0;right:0;margin-top:0;}}
+#news-rotator .span1{position:absolute;top:0;right:0;margin-top:0;}
 @media screen and (max-width:1000px){#global-top>div,#pagewrapper,footer{width:auto;}}@media screen and (max-width:900px){#groups{display:none;} #content{margin-right:10px;}}
