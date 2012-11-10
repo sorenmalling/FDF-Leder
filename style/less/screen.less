@@ -348,10 +348,15 @@ footer {
 }
 @media screen and (max-width: 450px) {
 	#local-navigation-first-level ol {
-		.column-count(3);
+		margin-top: -.7em;
 		
 		> li {
+			line-height: 1.2em;
 			display: block;
+			padding: .4em 0 .2em .5em;
+			margin: 0 0 .5em;
+			float: left;
+			width: 30%;
 			
 			&:first-child {
 				border-left: 2px solid @red;
@@ -374,6 +379,8 @@ footer {
 }
 @media screen and (max-width: 300px) {
 	#local-navigation-first-level ol {
-		.column-count(2);
+		> li {
+			width: 45%;
+		}
 	}
 }
