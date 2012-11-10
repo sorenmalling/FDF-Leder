@@ -277,8 +277,43 @@ footer {
 		margin-right: 10px;
 	}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 	body {
 		font-size: .6em;
+	}
+	#global-top {
+		height: 30px;
+		line-height: 1.5em;
+		ol {
+			line-height: 1em;
+			
+			&.user {
+				margin-top: 1em;
+			}
+		}
+	}
+	#pagewrapper {
+		margin-top: 30px;
+	}
+	#local-navigation-first-level {
+		h1 {
+			padding-top: .1em;
+		}
+		> nav {
+			margin-top: 19px;
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+}
+@media screen and (max-width: 550px) {
+	#local-navigation-first-level {
+		h1 {
+			display: none;
+		}
+		> nav {
+			margin-top: 0;
+			float: none;
+		}
 	}
 }
