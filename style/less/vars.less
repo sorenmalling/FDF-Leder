@@ -60,3 +60,9 @@
 .transition(@property: all, @time: .5s, @transition: ease-in-out) {
 	-webkit-transition: @arguments;
 }
+
+.default-border(@r: 5px) {
+	border: 3px solid #fff;
+	.border-radius(@r);
+	.box-shadow();
+}
