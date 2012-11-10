@@ -268,6 +268,7 @@ footer {
 	position: relative;
 	height: @newsHeight;
 	.default-border();
+	background-color: #fff;
 	
 	div {
 		height: @newsHeight;
@@ -278,6 +279,11 @@ footer {
 		top: 0;
 		right: 0;
 		margin-top: 0;
+		background-color: rgba(255, 255, 255, .8);
+		
+		ol {
+			padding: .5em 1em .5em 3em;
+		}
 	}
 
 	img {
@@ -290,7 +296,11 @@ footer {
 	.default-border(2px);
 	background-color: #f5f5f5;
 	padding: 0 .5em 0;
-	margin-bottom: .3em;
+	margin: .3em;
+	
+	h1 {
+		font-size: 1.3em;
+	}
 }
 
 @media screen and (max-width: 1000px) {
