@@ -165,7 +165,7 @@ footer {
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 15px;
+	//height: 15px;
 	.linear-gradient(darken(@contentBackgroundColor, 7), lighten(@contentBackgroundColor, 0));
 	.box-shadow();
 	font-size: 0.9em;
@@ -173,7 +173,8 @@ footer {
 	text-transform: uppercase;
 	text-align: center;
 	color: @globalNavTextColor;
-	padding: 18px 5px 10px;
+	padding: 1.1em 5px 1em;
+	line-height: 1.4em;
 }
 
 #content {
@@ -186,6 +187,20 @@ footer {
 		color: #fff;
 		.linear-gradient(lighten(@blue, 0), darken(@blue, 25));
 		.border-radius();
+		
+		hgroup {
+			h3 {
+				font-size: .9em;
+				color: #ccd;
+			}
+			a {
+				text-decoration: none;
+				
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
 		
 		> .row {
 			//margin: 0 -0.7em;
@@ -311,8 +326,6 @@ footer {
 		}
 	}
 }
-@media screen and (max-width: 500px) {
-}
 @media screen and (max-width: 550px) {
 	#local-navigation-first-level {
 		h1 {
@@ -321,6 +334,30 @@ footer {
 		> nav {
 			margin-top: 0;
 			float: none;
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	body {
+		font-size: .4em;
+	}
+	#global-top {
+		height: 25px;
+		line-height: 2.2em;
+	}
+	#pagewrapper {
+		margin-top: 25px;
+	}
+	#local-navigation-first-level ol {
+		.column-count(3);
+		
+		> li {
+			display: block;
+			
+			&:first-child {
+				border-left: 2px solid @red;
+				padding-left: .5em;
+			}
 		}
 	}
 }
