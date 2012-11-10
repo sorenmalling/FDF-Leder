@@ -1,0 +1,58 @@
+@import "grid.less";
+
+// Variables
+@red: #e72b31;
+@blue: #5da7dc;
+
+@backgroundColor: #42678b;
+@contentBackgroundColor: #F3F0F0;
+@groupsBackgroundColor: rgba(230, 226, 207, 0.8);
+@globalNavTextColor: #888;
+
+
+// Fonts
+@font-face{
+	font-family:'GlobalMenu';
+	font-style: normal;
+	font-weight: normal;
+	//src:url('menuglobal.eot'); // <- for IE
+	src:local('MetaNormal-Roman'), url('menuglobal.ttf') format('opentype');
+}
+@font-face{
+	font-family:'Heading';
+	font-style: normal;
+	font-weight: bold;
+	//src:url('menu1.eot'); // <- for IE
+	src:local('MetaBold-Roman'), url('menu1.ttf') format('opentype');
+}
+
+
+// Functions
+
+.rgba-background(@hex, @alpha) {
+	background-color: @hex;
+	background-color: @hex + rgba(0, 0, 0, @alpha);
+}
+
+.linear-gradient(@start, @stop) {
+	background-image: -webkit-linear-gradient(@start, @stop);
+}
+
+.box-shadow(@x: 0, @y: 1px, @blur: 3px, @color: rgba(0, 0, 0, .5)) {
+	box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-webkit-box-shadow: @arguments;
+}
+.box-shadow-inset(@x: 0, @y: 1px, @blur: 3px, @color: rgba(0, 0, 0, .5)) {
+	box-shadow: @arguments inset;
+	-moz-box-shadow: @arguments inset;
+	-webkit-box-shadow: @arguments inset;
+}
+
+.border-radius(@r: 5px) {
+	border-radius: @r;
+}
+
+.transition(@property: all, @time: .5s, @transition: ease-in-out) {
+	-webkit-transition: @arguments;
+}
