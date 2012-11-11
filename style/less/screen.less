@@ -220,14 +220,19 @@ footer {
 	bottom: 0;
 	width: 20%;
 	background-color: @groupsBackgroundColor;
-	padding: 62px 0.7em 1em;
+	padding: 44px .5em 1em .3em;
 	.box-shadow-inset();
 	margin: -2px -2px -2px 0;
-	//font-size: 0.9em;
 	
+	h2 {
+		margin: .5em 0 .5em .3em;
+	}
+	
+	.span2 {
+		width: 100%;
+		margin-left: 0;
+	}
 	.content-snippet {
-		padding: 0;
-		margin: 0;
 	}
 }
 
@@ -306,7 +311,6 @@ footer {
 .content-snippet {
 	.default-border(2px);
 	background-color: #fafafa;
-	//padding: 0 .5em 0;
 	padding: 0;
 	margin: .3em;
 	overflow: hidden;
@@ -328,7 +332,30 @@ footer {
 }
 @media screen and (max-width: 900px) {
 	#groups {
-		display: none;
+		position: static;
+		.border-radius(3px);
+		right: auto;
+		top: auto;
+		bottom: auto;
+		width: auto;
+		padding-top: 0;
+		padding-bottom: 1px;
+		background-color: @groupsBackgroundColor;
+		//.no-box-shadow();
+		.box-shadow();
+		margin: 0;
+		
+		.span2 {
+			width: @grid-column * 2 + @grid-gutter;
+			margin-left: @grid-gutter;
+			
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		.content-snippet {
+			margin: .3em;
+		}
 	}
 	#content {
 		margin-right: 10px;
