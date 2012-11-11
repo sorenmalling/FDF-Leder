@@ -224,6 +224,7 @@ footer {
 	.box-shadow-inset();
 	margin: -2px -2px -2px 0;
 	//font-size: 0.9em;
+	
 	.content-snippet {
 		padding: 0;
 		margin: 0;
@@ -308,8 +309,10 @@ footer {
 	//padding: 0 .5em 0;
 	padding: 0;
 	margin: .3em;
-	h1 {
-		font-size: 1.3em;
+	overflow: hidden;
+	
+	.illustration {
+		width: 100%;
 	}
 }
 
@@ -355,6 +358,12 @@ footer {
 		}
 		> nav {
 			margin-top: 19px;
+		}
+	}
+	.content-snippet {
+		.illustration {
+			width: 30%;
+			float: left;
 		}
 	}
 }
