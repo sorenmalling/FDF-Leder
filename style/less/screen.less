@@ -345,6 +345,16 @@ footer {
 		.box-shadow();
 		margin: 0;
 		
+		.content-snippet {
+			margin: .3em;
+		}
+	}
+	#content {
+		margin-right: 10px;
+	}
+}
+@media screen and (max-width: 900px) and (min-width:351px) {
+	#groups {
 		.span2 {
 			width: @grid-column * 2 + @grid-gutter;
 			margin-left: @grid-gutter;
@@ -353,12 +363,6 @@ footer {
 				margin-left: 0;
 			}
 		}
-		.content-snippet {
-			margin: .3em;
-		}
-	}
-	#content {
-		margin-right: 10px;
 	}
 }
 @media screen and (max-width: 700px) {
